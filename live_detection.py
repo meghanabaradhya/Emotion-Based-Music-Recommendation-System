@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Feb 29 17:46:17 2024
-@author: Dhrumit Patel
+Created by Meghana Basavaraju
 """
-
 from keras.models import load_model
 from keras.metrics import MeanSquaredError
 from time import sleep
@@ -56,8 +53,8 @@ while True:
             import os
 
             # Securely retrieve client ID and secret from environment variables
-            client_id = "320f7bdf50ac4f7b8381e42e88c1a022"
-            client_secret = "fc5db3910c8b44659f4184fa027f3ce8"
+            client_id = "YOUR_CLIENT_ID"
+            client_secret = "TOUR_CLIENT_SECRET"
 
             if not client_id or not client_secret:
                 raise ValueError("Please set the SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET environment variables.")
